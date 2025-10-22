@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habibul Bashar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Habibul Bashar</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1CIif-z1-CZASrXb2XwEMbRz5gGkeqAjC/view?usp=drive_link" target="_blank" aria-label="Download Resume">Download Resume</a></li>
+                 <li><a href="https://www.facebook.com/prime.anesthesia" target="_blank" aria-label="Download Resume">Social Media</a></li>
+
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Hi, I'm Habibul Bashar</h1>
+            <p class="typing-effect">Web Developer | CSE Student | Problem Solver</p>
+            <button onclick="scrollToSection('about')" class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Habibul Bashar's Profile Picture" class="profile-img">
+            <div class="personal-details">
+                <p>I'm a passionate Computer Science and Engineering student with expertise in HTML, CSS, JavaScript, and React. I enjoy building responsive, user-friendly web applications and solving complex problems.</p>
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Name:</strong> Habibul Bashar</li>
+                    <li><strong>Age:</strong> 24</li>
+                    <li><strong>Blood Group:</strong> O(-)</li>
+                    <li><strong>Subject:</strong> Computer Science and Engineering</li>
+                    <li><strong>CGPA:</strong> 3.00</li>
+                    <li><strong>School:</strong> Gov.C.B.Pilot High School</li>
+                    <li><strong>College:</strong>YMCA Public School & Collage</li>
+                    <li><strong>University:</strong>University Of Information Technology And Sciences</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/prime.anesthesia" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>Node JS</span>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <span>React</span>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h3>Todo App</h3>
+                <p>A task management app built with React and localStorage.</p>
+                <a href="https://github.com/yourusername/react-todo-app" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Weather Dashboard</h3>
+                <p>Real-time weather app using OpenWeather API.</p>
+                <a href="https://github.com/yourusername/weather-dashboard" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>E-commerce Clone</h3>
+                <p>Frontend clone of an e-commerce site with responsive design.</p>
+                <a href="https://github.com/yourusername/ecommerce-clone" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Habibul Bashar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
